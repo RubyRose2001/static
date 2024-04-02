@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+<style>
+    html,body, #app {
+        width: 1280px;
+        height: 1080px
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse; /* 边框合并为一个单一的边框 */
+    }
+    th, td {
+        border: 1px solid black; /* 设置单元格边框样式 */
+        padding: 8px; /* 设置单元格内边距 */
+        text-align: left; /* 设置文本对齐方式 */
+    }
+    th {
+        background-color: #f2f2f2; /* 设置表头背景色 */
+    }
+    header {
+        width: 100%;
+        text-align: center;
+    }
+    header h3 {
+        font-size: 24px;
+    }
+    .info, .user_info {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div id="app">
+        <header>
+            <h3>评审发放表</h3>
+        </header>
+        <div class="info">
+            <table>
+                <thead>
+                    <tr>
+                        <th>会议名称</th>
+                        <th>日期</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>一个测试会议}</td>
+                        <td>2024-04-02</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="user_info">
+            <table>
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>联系电话</th>
+                        <th>职称/职务</th>
+                        <th>证件号码</th>
+                        <th>银行卡号</th>
+                        <th>开户行</th>
+                        <th>领款人签字</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>孙国荣</td>
+                        <td>18656522436</td>
+                        <td>前台</td>
+                        <td>34262519770314</td>
+                        <td>12345543211234554321</td>
+                        <td>招商银行</td>
+                        <td id="qz"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
